@@ -1,0 +1,68 @@
+body
+{
+	font-family: arial;
+}
+h1
+{
+	text-align: center;
+}
+.items
+{
+	border:1px solid black;
+	width: 100%;
+	height: 400px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+button
+{
+	border:1px solid transparent;
+	padding:20px 10px;
+	font-size: 20px;
+	border-radius: 10px;
+	color:white;
+}
+
+.face
+{
+	background-color: darkblue;
+	
+}
+.yaho
+{
+	background-color: tomato;
+	
+}
+.goog
+{
+	background-color: orange;
+	
+}
+
+.reed
+{
+	background-color: red;
+}
+.green
+{
+	background-color: green;
+}
+
+
+.pink
+{
+	background-color: pink;
+}
+
+.yellow
+{
+	background-color: pink;
+}
+.orange
+{
+	background-color: pink;
+}
+
+

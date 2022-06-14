@@ -1,0 +1,43 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: arial;
+}
+
+body
+{
+	background-color: black;
+	
+}
+.clock
+{
+	color: white;
+	font-size: 80px;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+
+}
+
+.digit
+{
+	box-shadow: 0 0 5px 1px lime;
+	border-radius: 50%;
+	padding: 10px; 
+}
+
+.name
+{
+	color: orange;
+	text-align: center;
+	margin: 30px auto;
+	padding: 10px 20px;
+	border: 2px solid blue;
+	width: 300px;
+	box-shadow: 0 0 10px 1px blue;
+	border-radius: 10px;
+
+}

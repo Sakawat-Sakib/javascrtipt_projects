@@ -1,0 +1,135 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	background: url(img/beach.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container
+{
+	width: 400px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	transform: scale(1);
+}
+
+.outer-circle
+{
+	 background: conic-gradient(
+    #55b7a4 0%,
+    #4ca493 40%,
+    #fff 40%,
+    #fff 60%,
+    #336d62 60%,
+    #2a5b52 100%
+  );
+
+	width: 350px;
+	height: 350px;
+	border-radius: 50%;
+	position: absolute;
+}
+.inner-circle
+{
+	width: 330px;
+	height: 330px;
+	border-radius: 50%;
+	background-color:#010f1c;
+	position: absolute;
+}
+.text
+{
+	z-index: 2;
+	font-family: arial;
+	font-size: 25px;
+	color: white;
+}
+
+.dot
+{
+	width: 20px;
+	height: 190px;
+	position: absolute;
+	top: 10px;
+	
+	animation: rotate 7.5s linear forwards infinite;
+	transform-origin:bottom center; 
+}
+
+.point
+{
+	width: 10px;
+	height: 10px;
+	margin:0 auto;
+	border-radius: 50%;
+	background-color: white;
+}
+
+.container.grow
+{
+	animation: grow 3s linear forwards;
+}
+
+.container.hold
+{
+	animation: hold 1.5s linear forwards;
+}
+
+.container.shrink
+{
+	animation: shrink 3s linear forwards;
+}
+
+
+@keyframes rotate{
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes grow{
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.2);
+	}
+}
+
+@keyframes hold{
+	from {
+		transform: scale(1.2);
+	}
+	to {
+		transform: scale(1.2);
+	}
+}
+
+@keyframes shrink{
+	from {
+		transform: scale(1.2);
+	}
+	to {
+		transform: scale(1);
+	}
+}
+
+
+

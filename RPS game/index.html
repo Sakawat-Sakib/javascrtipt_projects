@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>RPS GAME</title>
+</head>
+<body>
+
+<header><h2>Rock Paper Scissors</h2></header>
+
+<div class="score-board">
+	<div id="user-label" class="badge">USER</div>
+	<div id="comp-label" class="badge">COMP</div>
+	<div class="dual-score"><span id="user-score">0</span>:<span id="comp-score">0</span></div>
+</div>
+
+
+<div class="result"> 
+	<p id="resultText">Paper covers rock.You win!</p>
+</div>
+
+
+<div class="choices">
+	<div class="choice" id="r">
+		<img  id="rock" src="img/rock.png" width="120px" onclick="mainFunction(this)">
+	</div>
+
+	<div class="choice" id="p">
+		<img id="paper" src="img/paper.png" width="120px" onclick="mainFunction(this)">
+	</div>
+
+	<div class="choice" id="s">
+		<img id="scissors" src="img/scissors.png" width="120px" onclick="mainFunction(this)">
+	</div>
+</div>
+
+
+<p id="msg">Make your move.</p>
+
+</body>
+<script src="main.js"></script>
+</html>

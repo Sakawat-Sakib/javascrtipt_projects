@@ -1,0 +1,44 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+.same
+{
+  height: 33.33vh;
+  text-align: center;
+}
+input[type=number]
+{
+  height: 100%;
+  width: 100%;
+  font-size: 50px;
+  text-align: center;
+  color: #fff;
+  background-color: black;
+  border: 0px;
+  outline: none;
+}
+
+#fahrenheit
+{
+border-top: 4px solid white;
+border-bottom: 4px solid white;
+}
+
+
+::-webkit-input-placeholder /*chrome,opera,safari*/
+{
+  color: #666666;
+}
+::-moz-placeholder /*firefox*/
+{
+  color: #666666;
+}
+::-ms-input-placeholder /*Microsoft edge*/
+{
+  color: #666666;
+}

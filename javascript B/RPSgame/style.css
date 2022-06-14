@@ -1,0 +1,28 @@
+body
+{
+	font-family: arial;
+}
+img
+{
+	width: 150px;
+	height: 150px;
+}
+img:hover
+{
+	box-shadow: 0px 10px 50px rgba(37,50,233,1);
+	cursor: pointer;
+}
+h2
+{
+	text-align: center;
+}
+.items
+{
+	border:1px solid black;
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: darkred;
+}

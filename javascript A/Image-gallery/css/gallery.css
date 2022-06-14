@@ -1,0 +1,142 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+.gallery
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 10px;
+	grid-template-areas: 
+	"img1 img2 img3 img4"
+	"img5 img6 img3 img7";
+}
+.allImg
+{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 300px;
+	width: 100%;
+}
+
+.img1
+{
+background-image: url(../img/img1.jpg);
+grid-area: img1;
+}
+.img2
+{
+background-image: url(../img/img2.jpg);
+grid-area: img2;
+}
+.img3
+{
+background-image: url(../img/img3.jpg);
+grid-area: img3;
+height: 610px;
+}
+.img4
+{
+background-image: url(../img/img4.jpg);
+grid-area: img4;
+}
+.img5
+{
+background-image: url(../img/img5.jpg);
+grid-area: img5;
+}
+.img6
+{
+background-image: url(../img/img6.jpg);
+grid-area: img6;
+}
+.img7
+{
+background-image: url(../img/img7.jpg);
+grid-area: img7;
+}
+.title
+{
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0;
+	display: flex;
+	justify-content: center;
+	align-items:center; 
+}
+.title a
+{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	border-bottom: 2px solid white;
+}
+.title:hover
+{
+	opacity: 0.7;
+	transition:all ease-in-out 0.3s;
+	box-shadow: -3px -3px 5px rgba(0,0,0,0.6);
+	cursor: pointer;
+}
+.name
+{
+	margin-top: 20px;
+	margin-bottom: 30px;
+	border-left: 7px solid #FF9100;
+	padding-left: 10px;
+	color:#363636;
+}
+.name h3
+{
+	margin-top: 5px;
+}
+.name p
+{
+	font-size: 15px;
+}
+
+.popup-window
+{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.popup-window img
+{
+
+	max-height: 80%;
+	max-width: 80%;
+	z-index: 500;
+
+
+}
+.img-btn-prev,
+.img-btn-next
+{
+	display: block;
+	padding: 6px 12px;
+	border-radius: 5px ;
+	background-color: #FF9100;
+	position: fixed;
+	top: 48vh;
+	z-index: 600;
+	color: #363636;
+	cursor: pointer;
+	font-weight: bold;
+	text-transform: uppercase;
+}

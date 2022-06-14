@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BLACK JACK GAME</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="container">
+	<h2 class="title">Challenge: Black Jack Game.</h2>
+	<h3><span class="title" id="popup">Let's play</span></h3>
+
+	<div class="row1">
+		<div class="box">
+			<h2>You:<span class="youScore">0</span></h2>
+			<div class="box1">
+				
+			</div>
+		</div>
+
+		<div class="box box2">
+			<h2>Bot:<span class="botScore">0</span></h2>
+			<div class="box2">
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="row2">
+		<div>
+			<button class="hit" onclick="hitFunction()">Hit</button>
+			<button class="stand" onclick="botFunction()">Stand</button>
+			<button class="again" onclick="againFunction()">Again</button>
+		</div>
+	</div>
+
+	<div class="row3">
+		
+			<table >
+				<tr>
+					<th>Wins</th>
+					<th>Losses</th>
+					<th>Draws</th>
+				</tr>
+
+				<tr>
+					<td><span class="wins">0</span></td>
+					<td><span class="losses">0</span></td>
+					<td><span class="draws">0</span></td>
+				</tr>
+			</table>
+		
+	</div>
+
+</div>
+
+
+
+</body>
+<script type="text/javascript" src="main.js"></script>
+</html>
